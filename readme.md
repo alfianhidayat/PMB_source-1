@@ -1,6 +1,3 @@
-## Sistem Informasi Penerimaan Siswa baru
-Build with Laravel
-
-### License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+## How to push
+git remote add origin https://github.com/LIQRGV/jejalan_client.git
+git push -u origin master
