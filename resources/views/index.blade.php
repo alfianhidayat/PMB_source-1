@@ -26,7 +26,7 @@
     <!-- Begin Navbar -->
         <ul id="dropdown1" class="dropdown-content">
           <li><a href="ujian">Jadwal Ujian Masuk</a></li>
-          <li><a href="#!">Informasi Penting</a></li>
+          <li><a href="informasipenting">Informasi Penting</a></li>
           <li><a href="hasil">Hasil Ujian Masuk</a></li>
         </ul>
         <ul id="dropdown2" class="dropdown-content">
@@ -43,8 +43,8 @@
               <!-- Dropdown Trigger -->
               <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Berita<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
               <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Pendaftaran<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
-              <li><a href="#!">Program Studi</a></li>
-              <li><a href="#!">Hubungi Kami</a></li>
+              <li><a href="prodi">Program Studi</a></li>
+              <li><a href="hubungikami">Hubungi Kami</a></li>
             </ul>
           </div>
         </nav>
@@ -88,6 +88,7 @@
       <div class="container">
         <div class="row">
           <div class="section">
+          <div class="divide"></div>
             <div class="col s6">
                 <div class="card">
                   <div class="card-image waves-effect waves-block waves-light">

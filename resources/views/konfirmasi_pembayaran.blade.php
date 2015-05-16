@@ -32,7 +32,7 @@
     <!-- Begin Navbar -->
         <ul id="dropdown1" class="dropdown-content">
           <li><a href="ujian">Jadwal Ujian Masuk</a></li>
-          <li><a href="#!">Informasi Penting</a></li>
+          <li><a href="informasipenting">Informasi Penting</a></li>
           <li><a href="hasil">Hasil Ujian Masuk</a></li>
         </ul>
         <ul id="dropdown2" class="dropdown-content">
@@ -49,8 +49,8 @@
               <!-- Dropdown Trigger -->
               <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Berita<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
               <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown2">Pendaftaran<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
-              <li><a href="#!">Program Studi</a></li>
-              <li><a href="#!">Hubungi Kami</a></li>
+              <li><a href="prodi">Program Studi</a></li>
+              <li><a href="hubungikami">Hubungi Kami</a></li>
             </ul>
           </div>
         </nav>
@@ -62,11 +62,12 @@
         <div class="section">
           <div class="row">
             <ul class="collection with-header">
-              <li class="collection-header"><h4>Download Formulir Pendaftaran</h4></li>
+              <li class="collection-header"><h4>Konfirmasi Pembayaran</h4></li>
                 <li class="collection-item">       
                     <div class="section">
-                    <div class="col s5">
-                      <img class="materialboxed" data-caption="Pendaftaran Online" width="300" src="img/brosur.png">
+                    <br>
+                    <div class="col s6">
+                      <img class="materialboxed" data-caption="Pendaftaran Online" width="400" src="img/reg.jpg">
                     </div>
                     <div class="col s5">
                       <div class="row">
@@ -102,9 +103,7 @@
                           </div>
                           </form>
                           <div class="row">
-                            <div class="input-field col s6">
-                            </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s6 offset-s6">
                               <button class="btn red waves-effect waves-light" type="submit" name="action">Download
                                 <i class="mdi-content-send right"></i>
                               </button>

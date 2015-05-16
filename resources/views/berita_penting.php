@@ -20,8 +20,8 @@
     <body>
     <!-- Begin Navbar -->
         <ul id="dropdown1" class="dropdown-content">
-          <li><a href="ujian">Jadwal Ujian Masuk</a></li>
-          <li><a href="informasipenting">Informasi Penting</a></li>
+          <li class="active"><a href="ujian">Jadwal Ujian Masuk</a></li>
+          <li class="active"><a href="informasipenting">Informasi Penting</a></li>
           <li><a href="hasil">Hasil Ujian Masuk</a></li>
         </ul>
         <ul id="dropdown2" class="dropdown-content">
@@ -34,9 +34,9 @@
             <a href="home" class="brand-logo">Logo</a>
             <ul class="right hide-on-med-and-down">
               <li ><a href="home">Home</a></li>
-              <li class="active"><a href="informasi">Informasi</a></li>
+              <li><a href="informasi">Informasi</a></li>
               <!-- Dropdown Trigger -->
-              <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Berita<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+              <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown1">Berita<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
               <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Pendaftaran<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
               <li><a href="prodi">Program Studi</a></li>
               <li><a href="hubungikami">Hubungi Kami</a></li>
@@ -49,66 +49,24 @@
     <!-- Container -->
         <div class="container">
         <div class="section">
-            <div class="row">
-             <ul class="collection with-header">
-              <li class="collection-header"><h4>Penerimaan Siswa Baru</h4></li>
+          <div class="row">
+            <ul class="collection with-header">
+              <li class="collection-header"><h4>Pengumuman Untuk Calon Siswa</h4></li>
                 <li class="collection-item">       
-           
-              <!-- <h4>PENERIMAAN SISWA BARU</h4>             -->
-              <div class="card-panel red lighten-2"><h6 class="center" style="color:white">Waktu Pendaftaran</h6></div>
-            <table class="striped">
-              <thead>
-                <tr>
-                    <th data-field="gel">Gelombang</th>
-                    <th data-field="waktu-pendaftaran">Waktu Pendaftaran</th>
-                    <th data-field="jadwal-tes">Jadwal Tes</th>
-                    <th data-field="jadwal-tes">Pengumuman</th>
-                    <th data-field="jadwal-tes">Pendaftaran Gelombang</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>I</td>
-                  <td>01 April 2015 - 02 April 2015</td>
-                  <td>03 April 2015</td>
-                  <td>04 April 2015</td>
-                  <td>05 April 2015</td>
-                </tr>
-                <tr>
-                  <td>II</td>
-                  <td>01 April 2015 - 02 April 2015</td>
-                  <td>03 April 2015</td>
-                  <td>04 April 2015</td>
-                  <td>05 April 2015</td>
-                </tr>
-                <tr>
-                  <td>III</td>
-                  <td>01 April 2015 - 02 April 2015</td>
-                  <td>03 April 2015</td>
-                  <td>04 April 2015</td>
-                  <td>05 April 2015</td>
-                </tr>
-                <tr>
-                  <td>IV</td>
-                  <td>01 April 2015 - 02 April 2015</td>
-                  <td>03 April 2015</td>
-                  <td>04 April 2015</td>
-                  <td>05 April 2015</td>
-                </tr>
-              </tbody>
-            </table>
-              <div class="card-panel red lighten-2"><h6 class="center" style="color:white ">Persyaratan Pendaftaran</h6></div>
-              <ul class="collection">
-                <li class="collection-item">1. Mengisi, mendandatangani dan membayara Formulir Pendaftaran Rp 150.000,-</li>
-                <li class="collection-item">2. Lulusan SMP/MTS</li>
-                <li class="collection-item">3. Fotocopy Identitas diri seperti KTP/PASSPORT/SIM/Surat keterangan siswa</li>
-                <li class="collection-item">4. Menyerahkan Pas Photo berwarna ukuran 4x6 dan 4x3 masing-masing 2 lembar</li>
-                <li class="collection-item">5. Menyerahkan Fotocopy Ijazah/Surat Keterangan Lulus/Ijazah/STTB/Surat Keterangan ikut UAN</li>
-                <li class="collection-item">6. Menyerahkan Fotocopy daftar nilai ijazah/STTB/UAN/Raport terakhir</li>
-              </ul>
-              </li>
-              </ul>
-            </div>
+                        <p>Berikut ini kami informasikan kepada semua calon Siswa SMANTIG, berkenaan dengan Hasil 
+                        Ujian masuk yang di selenggarakan di gedung SMANTIG. Berikut hasil yang bisa anda lihat di halaman dibawah ini : </p>
+                        <p>Adapun Peserta yang dinyatakan lulus, maka diwajibkan melakukan daftar ulang dengan melakukan pembayaran minimal sebesar 30% dari total biaya masuk (SPP + biaya kuliah satu semester) sesuai dengan biaya pada tingkat, 
+                        jurusan dan kelas yang dipilih dengan rincian minimal yang harus di lunasi sebagai berikut : </p>
+                          <ul class="collection">
+                            <li class="collection-item">1. Program IPA Rp.500.000 (SPP) + Rp. 1.920.000 (Biaya Kuliah) = Rp 2.420.000,-(Total), jadi 30% minimal yang harus di bayar sebesar Rp. 760.000,- </li>
+                            <li class="collection-item">2. Program IPS Rp.500.000 (SPP) + Rp. 1.920.000 (Biaya Kuliah) = Rp 2.420.000,-(Total), jadi 30% minimal yang harus di bayar sebesar Rp. 760.000,- </li>
+                            <li class="collection-item">3. Program BAHASA Rp.500.000 (SPP) + Rp. 1.920.000 (Biaya Kuliah) = Rp 2.420.000,-(Total), jadi 30% minimal yang harus di bayar sebesar Rp. 760.000,- </li>
+                          </ul>
+                        <p>Pembayaran dapat dilakukan dengan cara mentransfer biaya tersebut pada rekening Bank BRI Cab. Bandung Nomor Rekening 000 000 000 000 an. 
+                          SMANTING dan/atau dibayar tunai kepada bagian administrasi di lantai satu gedung SMANTIG. </p>
+                </li>
+            </ul>
+          </div>
         </div>
         </div>
 

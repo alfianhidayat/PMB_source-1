@@ -24,7 +24,7 @@
     <!-- Begin Navbar -->
         <ul id="dropdown1" class="dropdown-content">
           <li><a href="ujian">Jadwal Ujian Masuk</a></li>
-          <li><a href="#!">Informasi Penting</a></li>
+          <li><a href="informasipenting">Informasi Penting</a></li>
           <li><a href="hasil">Hasil Ujian Masuk</a></li>
         </ul>
         <ul id="dropdown2" class="dropdown-content">
@@ -41,8 +41,8 @@
               <!-- Dropdown Trigger -->
               <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Berita<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
               <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown2">Pendaftaran<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
-              <li><a href="#!">Program Studi</a></li>
-              <li><a href="#!">Hubungi Kami</a></li>
+              <li><a href="prodi">Program Studi</a></li>
+              <li><a href="hubungikami">Hubungi Kami</a></li>
             </ul>
           </div>
         </nav>
@@ -65,9 +65,11 @@
                   <div id="jalur_prodi" class="col s12">
                     <div class="section">
                     <div class="col s5">
-                      <img class="materialboxed" data-caption="Pendaftaran Online" width="300" src="img/brosur.png">
+                    <br>
+                    <br>
+                      <img class="materialboxed" data-caption="Pendaftaran Online" width="300" src="img/reg.jpg">
                     </div>
-                    <div class="col s5">
+                    <div class="col s6">
                       <br>
                       <h6>Jalur Tes</h6>
                       <select class="browser-default">
@@ -86,9 +88,7 @@
                       </select>
                       <br>
                       <div class="row">
-                            <div class="input-field col s6">
-                            </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s6 offset-s6">
                               <button class="btn red waves-effect waves-light" type="submit" name="action">Submit
                               <i class="mdi-content-send right"></i>
                             </button>
@@ -100,14 +100,18 @@
                   <div id="test2" class="col s12">
                     <div class="section">
                     <div class="col s12">
-                      <img class="materialboxed" data-caption="Pendaftaran Online" width="300" src="img/brosur.png">
+                    <br>
+                    <br>
+                      <img class="materialboxed" data-caption="Pendaftaran Online" width="300" src="img/reg.jpg">
                     </div>
                     </div>
                   </div>
                   <div id="test3" class="col s12">
                     <div class="section">
                     <div class="col s12">
-                      <img class="materialboxed" data-caption="Pendaftaran Online" width="300" src="img/brosur.png">
+                    <br>
+                    <br>
+                      <img class="materialboxed" data-caption="Pendaftaran Online" width="300" src="img/reg.jpg">
                     </div>
                     </div>
                   </div>

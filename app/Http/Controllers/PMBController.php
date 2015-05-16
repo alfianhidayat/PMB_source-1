@@ -104,4 +104,12 @@ class PMBController extends Controller {
 	public function viewPendafOnline(){
 		return view('pendaftaran_online');
 	}
+
+	public function viewBeritaPenting(){
+		return view('berita_penting');
+	}
+
+	public function viewProdi(){
+		return view('prodi');
+	}
 }

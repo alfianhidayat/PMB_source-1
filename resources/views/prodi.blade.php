@@ -14,15 +14,6 @@
           $(document).ready(function(){
               $('.dropdown-button').dropdown();
           });
-          $(document).ready(function(){
-            $('.materialboxed').materialbox();
-          });
-          $(document).ready(function(){
-            $('.datepicker').pickadate({
-              selectMonths: true,
-              selectYears: 15
-            });
-          });
       </script>
     </head>
 
@@ -35,7 +26,7 @@
         </ul>
         <ul id="dropdown2" class="dropdown-content">
           <li><a href="pendaftaran">Pendaftaran Online</a></li>
-          <li class="active"><a href="formulir">Cetak Formulir</a></li>
+          <li><a href="formulir">Cetak Formulir</a></li>
           <li><a href="konfirmasi">Konfirmasi Pembayaran</a></li>
         </ul>
         <nav>
@@ -46,8 +37,8 @@
               <li><a href="informasi">Informasi</a></li>
               <!-- Dropdown Trigger -->
               <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Berita<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
-              <li class="active"><a class="dropdown-button" href="#!" data-activates="dropdown2">Pendaftaran<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
-              <li><a href="prodi">Program Studi</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown2">Pendaftaran<i class="mdi-navigation-arrow-drop-down right"></i></a></li>
+              <li class="active"><a href="prodi">Program Studi</a></li>
               <li><a href="hubungikami">Hubungi Kami</a></li>
             </ul>
           </div>
@@ -60,61 +51,43 @@
         <div class="section">
           <div class="row">
             <ul class="collection with-header">
-              <li class="collection-header"><h4>Download Formulir Pendaftaran</h4></li>
-                <li class="collection-item">       
-                    <div class="section">
-                    <div class="col s6">
-                    <br>
-                    <br>
-                      <img class="materialboxed" data-caption="Pendaftaran Online" width="400" src="img/reg.jpg">
-                    </div>
-                    <div class="col s5">
-                      <div class="row">
-                        <form class="col s12">
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <input id="reg" type="text" class="validate">
-                              <label for="reg">No. Registrasi</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col s6">
-                              <input id="first_name" type="text" class="validate">
-                              <label for="first_name">First Name</label>
-                            </div>
-                            <div class="input-field col s6">
-                              <input id="last_name" type="text" class="validate">
-                              <label for="last_name">Last Name</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col s12">
-                              <input id="asal_sekolah" type="text" class="validate">
-                              <label for="asal_sekolah">Asal Sekolah</label>
-                            </div>
-                          </div>
-                          <div class="row">
-                            <div class="input-field col s6">
-                              <input id="tempat" type="text" class="validate">
-                              <label for="tempat">Tempat Lahir</label>
-                            </div>
-                            <div class="input-field col s6">
-                              <input placeholder="Choose Date" type="date" class="datepicker">
-                              <label for="date">Tanggal Lahir</label>
-                              <button class="btn red waves-effect waves-light" type="submit" name="action">Download
-                                <i class="mdi-content-send right"></i>
-                              </button>
-                            </div>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
+              <li class="collection-header"><h4>Program Studi</h4></li>
+                <li class="collection-item col s4 center">
+                  <div class="section"></div>
+                  <img src="img/reg.jpg" height="170px">
+                  <h5>Program IPA</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat.</p>           
+                </li>
+                <li class="collection-item col s4 center">
+                  <div class="section"></div>
+                  <img src="img/reg.jpg" height="170px">
+                  <h5>Program IPA</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat.</p>           
+                </li>
+                <li class="collection-item col s4 center">
+                  <div class="section"></div>
+                  <img src="img/reg.jpg" height="170px">
+                  <h5>Program IPA</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat.</p>           
                 </li>
             </ul>
-          </div>
+           </div>
         </div>
         </div>
+
+
+
       <!-- Begin Footer -->
+
       <footer class="page-footer">
           <div class="container">
             <div class="row">
