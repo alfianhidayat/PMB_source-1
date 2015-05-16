@@ -52,17 +52,34 @@ return [
 			'prefix'   => '',
 		],
 
-		'mysql' => [
-			'driver'    => 'mysql',
-			'host'      => env('DB_HOST', 'localhost'),
-			'database'  => env('DB_DATABASE', 'forge'),
-			'username'  => env('DB_USERNAME', 'forge'),
-			'password'  => env('DB_PASSWORD', ''),
-			'charset'   => 'utf8',
-			'collation' => 'utf8_unicode_ci',
-			'prefix'    => '',
-			'strict'    => false,
-		],
+		// 'mysql' => [
+		// 	'driver'    => 'mysql',
+		// 	'host'      => env('DB_HOST', 'localhost'),
+		// 	'database'  => env('DB_DATABASE', 'forge'),
+		// 	'username'  => env('DB_USERNAME', 'forge'),
+		// 	'password'  => env('DB_PASSWORD', ''),
+		// 	'charset'   => 'utf8',
+		// 	'collation' => 'utf8_unicode_ci',
+		// 	'prefix'    => '',
+		// 	'strict'    => false,
+		// ],
+
+		'mysql' => array(
+			'read' => array(
+				'host' => '192.168.1.1',
+			),
+			'write' => array(
+				'host' => '192.168.1.2'
+			),
+			'driver'	=> 'mysql',
+			'database'	=> 'db_pmb',
+			'username'	=> 'root',
+			'password'	=> '',
+			'charset'	=> 'utf8',
+			'collation'	=> 'utf8_unicode_ci',
+			'prefix'	=> '',
+
+		),
 
 		'pgsql' => [
 			'driver'   => 'pgsql',

@@ -5691,7 +5691,7 @@ button.btn-floating {
   opacity: 0;
   position: absolute;
   white-space: nowrap;
-  top: 0;
+  top: 0px;
   z-index: 99;
   will-change: width, height; }
   .dropdown-content li {
@@ -5704,14 +5704,14 @@ button.btn-floating {
     text-transform: none; 
     }
     .dropdown-content li:hover, .dropdown-content li.active {
-      background-color: #eee; 
+      background-color: #eee;
     }
     .dropdown-content li > a, .dropdown-content li > span {
       font-size: 1.2rem;
       color: #26a69a;
       display: block;
-      padding: 1rem 1rem; }
-
+      padding: 1rem 1rem; 
+    }
 /*!
  * Waves v0.6.0
  * http://fian.my.id/Waves

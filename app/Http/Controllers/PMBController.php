@@ -112,4 +112,9 @@ class PMBController extends Controller {
 	public function viewProdi(){
 		return view('prodi');
 	}
+
+	public function database(){
+		$results = DB::select('select * from ')
+	}
+
 }
