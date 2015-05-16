@@ -63,3 +63,7 @@ Route::get('konfirmasi','PMBController@viewKonfirmasi');
 Route::get('pendaftaran','PMBController@viewPendafOnline');
 Route::get('informasipenting','PMBController@viewBeritaPenting');
 Route::get('prodi','PMBController@viewProdi');
+
+Route::get('db',function(){
+	return view('db');
+});

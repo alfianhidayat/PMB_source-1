@@ -65,14 +65,10 @@ return [
 		// ],
 
 		'mysql' => array(
-			'read' => array(
-				'host' => '192.168.1.1',
-			),
-			'write' => array(
-				'host' => '192.168.1.2'
-			),
+
 			'driver'	=> 'mysql',
-			'database'	=> 'db_pmb',
+			'host'		=> 'localhost',
+			'database'	=> 'example',
 			'username'	=> 'root',
 			'password'	=> '',
 			'charset'	=> 'utf8',
