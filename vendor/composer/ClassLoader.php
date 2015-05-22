@@ -351,7 +351,11 @@ class ClassLoader
             foreach ($this->prefixLengthsPsr4[$first] as $prefix => $length) {
                 if (0 === strpos($class, $prefix)) {
                     foreach ($this->prefixDirsPsr4[$prefix] as $dir) {
+<<<<<<< HEAD
                         if (is_file($file = $dir . DIRECTORY_SEPARATOR . substr($logicalPathPsr4, $length))) {
+=======
+                        if (file_exists($file = $dir . DIRECTORY_SEPARATOR . substr($logicalPathPsr4, $length))) {
+>>>>>>> 41adb9df9f15281c49d7610aa5f8cc53163e96f2
                             return $file;
                         }
                     }
@@ -361,7 +365,11 @@ class ClassLoader
 
         // PSR-4 fallback dirs
         foreach ($this->fallbackDirsPsr4 as $dir) {
+<<<<<<< HEAD
             if (is_file($file = $dir . DIRECTORY_SEPARATOR . $logicalPathPsr4)) {
+=======
+            if (file_exists($file = $dir . DIRECTORY_SEPARATOR . $logicalPathPsr4)) {
+>>>>>>> 41adb9df9f15281c49d7610aa5f8cc53163e96f2
                 return $file;
             }
         }
@@ -380,7 +388,11 @@ class ClassLoader
             foreach ($this->prefixesPsr0[$first] as $prefix => $dirs) {
                 if (0 === strpos($class, $prefix)) {
                     foreach ($dirs as $dir) {
+<<<<<<< HEAD
                         if (is_file($file = $dir . DIRECTORY_SEPARATOR . $logicalPathPsr0)) {
+=======
+                        if (file_exists($file = $dir . DIRECTORY_SEPARATOR . $logicalPathPsr0)) {
+>>>>>>> 41adb9df9f15281c49d7610aa5f8cc53163e96f2
                             return $file;
                         }
                     }
@@ -390,7 +402,11 @@ class ClassLoader
 
         // PSR-0 fallback dirs
         foreach ($this->fallbackDirsPsr0 as $dir) {
+<<<<<<< HEAD
             if (is_file($file = $dir . DIRECTORY_SEPARATOR . $logicalPathPsr0)) {
+=======
+            if (file_exists($file = $dir . DIRECTORY_SEPARATOR . $logicalPathPsr0)) {
+>>>>>>> 41adb9df9f15281c49d7610aa5f8cc53163e96f2
                 return $file;
             }
         }

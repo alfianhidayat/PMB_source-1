@@ -19,6 +19,7 @@ Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',
 ]);
+<<<<<<< HEAD
 
 // Begin Latihan
 
@@ -65,3 +66,5 @@ Route::get('informasipenting','PMBController@viewBeritaPenting');
 Route::get('prodi','PMBController@viewProdi');
 
 Route::get('db','RegController@index');
+=======
+>>>>>>> 41adb9df9f15281c49d7610aa5f8cc53163e96f2
