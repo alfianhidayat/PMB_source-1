@@ -7,19 +7,6 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script type="text/javascript" src="js/materialize.js"></script>
-      <script type="text/javascript">
-          $(document).ready(function(){
-              $('.dropdown-button').dropdown();
-          });
-      </script>
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $('.slider').slider();
-        });
-      </script>
     </head>
 
     <body>
@@ -156,6 +143,18 @@
       <!-- End Footer -->
 
       <!--Import jQuery before materialize.js-->
-      
+      <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/materialize.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+              $('.dropdown-button').dropdown();
+          });
+      </script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.slider').slider();
+        });
+      </script>
     </body>
   </html>

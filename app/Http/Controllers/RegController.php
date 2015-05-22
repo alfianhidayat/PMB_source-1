@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class PMBController extends Controller {
+class RegController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -14,7 +14,11 @@ class PMBController extends Controller {
 	 */
 	public function index()
 	{
-		return view('index');
+		
+		$data = array('name'=>'san juan',
+						'date' => date('Y-m-d'));
+		return view('db')->with($data);
+
 	}
 
 	/**
@@ -80,41 +84,5 @@ class PMBController extends Controller {
 	{
 		//
 	}
-
-	public function viewInformasi(){
-		$array = array();
-		$array ['posts'] = \App\Models\wkt::all();
-		return view('informasi',$array);
-	}
-
-	public function viewBeritaHasil(){
-		return view('berita_hasil');
-	}
-
-	public function viewBeritaUjian(){
-		return view('berita_ujian');
-	}
-
-	public function viewFormulir(){
-		return view('formulir_pendaftaran');
-	}
-
-	public function viewKonfirmasi(){
-		return view('konfirmasi_pembayaran');
-	}
-
-	public function viewPendafOnline(){
-		return view('pendaftaran_online');
-	}
-
-	public function viewBeritaPenting(){
-		return view('berita_penting');
-	}
-
-	public function viewProdi(){
-		return view('prodi');
-	}
-
-
 
 }

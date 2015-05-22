@@ -123,10 +123,9 @@
                     </tbody>
                   </table>   
             <!-- Tables -->
-                
             </li>
             <ul class="pagination">
-              <li class="disabled"><a href="#!"><i class="mdi-navigation-chevron-left"></i></a></li>
+              <li class="disabled"><a href="#!"><i class="mdi-navigation-chevron-left "></i></a></li>
               <li class="active"><a href="#!">1</a></li>
               <li class="waves-effect"><a href="#!">2</a></li>
               <li class="waves-effect"><a href="#!">3</a></li>

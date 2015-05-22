@@ -58,7 +58,7 @@
                   <div class="col s12">
                     <ul class="tabs">
                       <li class="tab col s3"><a class="active" href="#jalur_prodi">Jalur Tes dan Program Studi</a></li>
-                      <li class="tab col s3"><a href="#test2">Biodata Pribadi</a></li>
+                      <li class="tab col s3"><a class="disable" href="#test2">Biodata Pribadi</a></li>
                       <li class="tab col s3"><a href="#test3">Data Keluarga</a></li>
                     </ul>
                   </div>
@@ -89,7 +89,7 @@
                       <br>
                       <div class="row">
                             <div class="input-field col s6 offset-s6">
-                              <button class="btn red waves-effect waves-light" type="submit" name="action">Submit
+                              <button class="btn teal waves-effect waves-light" type="submit" name="action" href="#test2">Submit
                               <i class="mdi-content-send right"></i>
                             </button>
                             </div>

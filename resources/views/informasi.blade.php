@@ -52,52 +52,31 @@
             <div class="row">
              <ul class="collection with-header">
               <li class="collection-header"><h4>Penerimaan Siswa Baru</h4></li>
-                <li class="collection-item">       
-           
-              <!-- <h4>PENERIMAAN SISWA BARU</h4>             -->
-              <div class="card-panel red lighten-2"><h6 class="center" style="color:white">Waktu Pendaftaran</h6></div>
+                <li class="collection-item">
+              <div class="card-panel teal darken-1"><h6 class="center" style="color:white">Waktu Pendaftaran</h6></div>
             <table class="striped">
               <thead>
                 <tr>
-                    <th data-field="gel">Gelombang</th>
-                    <th data-field="waktu-pendaftaran">Waktu Pendaftaran</th>
-                    <th data-field="jadwal-tes">Jadwal Tes</th>
-                    <th data-field="jadwal-tes">Pengumuman</th>
-                    <th data-field="jadwal-tes">Pendaftaran Gelombang</th>
+                    <th class="center" data-field="gel">Gelombang</th>
+                    <th class="center" data-field="waktu-pendaftaran">Waktu Pendaftaran</th>
+                    <th class="center" data-field="jadwal-tes">Jadwal Tes</th>
+                    <th class="center" data-field="jadwal-tes">Pengumuman</th>
+                    <th class="center" data-field="jadwal-tes">Pendaftaran Gelombang</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>I</td>
-                  <td>01 April 2015 - 02 April 2015</td>
-                  <td>03 April 2015</td>
-                  <td>04 April 2015</td>
-                  <td>05 April 2015</td>
-                </tr>
-                <tr>
-                  <td>II</td>
-                  <td>01 April 2015 - 02 April 2015</td>
-                  <td>03 April 2015</td>
-                  <td>04 April 2015</td>
-                  <td>05 April 2015</td>
-                </tr>
-                <tr>
-                  <td>III</td>
-                  <td>01 April 2015 - 02 April 2015</td>
-                  <td>03 April 2015</td>
-                  <td>04 April 2015</td>
-                  <td>05 April 2015</td>
-                </tr>
-                <tr>
-                  <td>IV</td>
-                  <td>01 April 2015 - 02 April 2015</td>
-                  <td>03 April 2015</td>
-                  <td>04 April 2015</td>
-                  <td>05 April 2015</td>
-                </tr>
+                    @foreach ($posts as $post)
+                      <tr>
+                        <td class="center">{{$post->gel}}</td>
+                        <td class="center">{{$post->time}}</td>
+                        <td class="center">{{$post->jadwal}}</td>
+                        <td class="center">{{$post->pengumuman}}</td>
+                        <td class="center">{{$post->pendaftaran}}</td>
+                      </tr>
+                    @endforeach
               </tbody>
             </table>
-              <div class="card-panel red lighten-2"><h6 class="center" style="color:white ">Persyaratan Pendaftaran</h6></div>
+              <div class="card-panel teal darken-1"><h6 class="center" style="color:white ">Persyaratan Pendaftaran</h6></div>
               <ul class="collection">
                 <li class="collection-item">1. Mengisi, mendandatangani dan membayara Formulir Pendaftaran Rp 150.000,-</li>
                 <li class="collection-item">2. Lulusan SMP/MTS</li>
@@ -111,7 +90,11 @@
             </div>
         </div>
         </div>
-
+        <!--
+          <?php
+            var_dump($posts);
+          ?>
+        -->
 
 
       <!-- Begin Footer -->

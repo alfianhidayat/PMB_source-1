@@ -70,10 +70,10 @@
                     </div>
                     <div class="col s5">
                       <div class="row">
-                        <form class="col s12">
+                        <form class="col s12" action="db.blade.php" method="post">
                           <div class="row">
                             <div class="input-field col s12">
-                              <input id="reg" type="text" class="validate">
+                              <input id="reg" type="text" class="validate" name="idreg">
                               <label for="reg">No. Registrasi</label>
                             </div>
                           </div>
@@ -101,7 +101,7 @@
                             <div class="input-field col s6">
                               <input placeholder="Choose Date" type="date" class="datepicker">
                               <label for="date">Tanggal Lahir</label>
-                              <button class="btn red waves-effect waves-light" type="submit" name="action">Download
+                              <button class="btn teal waves-effect waves-light" type="submit" name="action">Download
                                 <i class="mdi-content-send right"></i>
                               </button>
                             </div>

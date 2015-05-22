@@ -2073,7 +2073,7 @@ img.responsive-img, video.responsive-video {
   .pagination li.active a {
     color: #fff; }
   .pagination li.active {
-    background-color: #ee6e73; }
+    background-color: #00897b ; }
   .pagination li.disabled a {
     color: #999; }
   .pagination li i {
@@ -2169,7 +2169,7 @@ ul.staggered-list li {
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
-  background-color: #ee6e73; }
+  background-color: #00897b ; }
   footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
@@ -5007,7 +5007,7 @@ span.badge {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  background-color: #00897b         ;
   width: 100%;
   height: 56px;
   line-height: 56px; }

@@ -68,7 +68,7 @@ return [
 
 			'driver'	=> 'mysql',
 			'host'		=> 'localhost',
-			'database'	=> 'example',
+			'database'	=> 'db_pmb',
 			'username'	=> 'root',
 			'password'	=> '',
 			'charset'	=> 'utf8',

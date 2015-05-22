@@ -104,7 +104,7 @@
                           </form>
                           <div class="row">
                             <div class="input-field col s6 offset-s6">
-                              <button class="btn red waves-effect waves-light" type="submit" name="action">Download
+                              <button class="btn teal waves-effect waves-light" type="submit" name="action">Submit
                                 <i class="mdi-content-send right"></i>
                               </button>
                             </div>
