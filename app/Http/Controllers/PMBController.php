@@ -104,7 +104,9 @@ class PMBController extends Controller {
 	}
 
 	public function viewPendafOnline(){
-		return view('pendaftaran_online');
+		$array = array();
+		$array ['posts'] = \App\Models\prodi::all();
+		return view('pendaftaran_online',$array);
 	}
 
 	public function viewBeritaPenting(){
@@ -115,6 +117,8 @@ class PMBController extends Controller {
 		return view('prodi');
 	}
 
-
+	public function coba(){
+		return view('welcometest');
+	}
 
 }

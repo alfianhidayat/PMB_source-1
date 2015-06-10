@@ -17,6 +17,9 @@
           $(document).ready(function(){
             $('.materialboxed').materialbox();
           });
+          $(document).ready(function() {
+            $('select').material_select();
+          });
       </script>
     </head>
 
@@ -71,29 +74,31 @@
                     </div>
                     <div class="col s6">
                       <br>
-                      <h6>Jalur Tes</h6>
-                      <select class="browser-default">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                      <br>
-                      <h6>Program Studi</h6>
-                      <select class="browser-default">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                      <br>
-                      <div class="row">
-                            <div class="input-field col s6 offset-s6">
-                              <button class="btn teal waves-effect waves-light" type="submit" name="action" href="#test2">Submit
+                      {{ Form::open(array('url' => 'cobawelcome')) }}
+                        <h6>Jalur Tes</h6>
+                        <select class="browser-default" name="jalur">
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select>
+                        <br>
+                        <h6>Program Studi</h6>
+                        <select class="browser-default" name="prodi">
+                          <option value="" disabled selected>Choose your option</option>
+                          @foreach($posts as $post)
+                            <option value="0">{{$post->nama_prodi}}</option>
+                          @endforeach
+                        </select>
+                        <br>
+                        <div class="row">
+                          <div class="input-field col s6 offset-s6">
+                            <button class="btn teal waves-effect waves-light" type="submit" href="#test2">Submit
                               <i class="mdi-content-send right"></i>
                             </button>
-                            </div>
+                        </div>
                       </div>
+                      {{ Form::close() }}
                     </div>
                     </div>
                   </div>
