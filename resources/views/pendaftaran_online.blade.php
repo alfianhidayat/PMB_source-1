@@ -74,48 +74,16 @@
                     </div>
                     <div class="col s6">
                       <br>
-
-                      {!! Form::open(array('url' => 'prodi')) !!}
-
-                      <div class="form-group">
-                          {!! Form::label('Your Name') !!}
-                          {!! Form::text('name', null, 
-                              array('required', 
-                                    'class'=>'form-control', 
-                                    'placeholder'=>'Your name')) !!}
-                      </div>
-
-                      <div class="form-group">
-                        {!! Form::label('Select)'!!}
-                        {!! Form::Select('jalur', ['Under 18', '19 to 30', 'Over 30']) !!}
-                      </div>
-
-                      <div class="form-group">
-                          {!! Form::label('Your E-mail Address') !!}
-                          {!! Form::text('email', null, 
-                              array('required', 
-                                    'class'=>'form-control', 
-                                    'placeholder'=>'Your e-mail address')) !!}
-                      </div>
-
-                      <div class="form-group">
-                          {!! Form::label('Your Message') !!}
-                          {!! Form::textarea('message', null, 
-                              array('required', 
-                                    'class'=>'form-control', 
-                                    'placeholder'=>'Your message')) !!}
-                      </div>
-
-                      <div class="form-group">
-                          {!! Form::submit('Contact Us!', 
-                            array('class'=>'btn btn-primary')) !!}
-                      </div>
-                      {!! Form::close() !!}
-
-
-
                       {!! Form::open(array('url' => 'cobawelcome')) !!}
-                        <h6>Jalur Tes</h6>
+                      <div class="form-group">
+                        {!! Form::label('Jalur Tes')!!}
+                        {!! Form::Select('jalur', ['Option 1', 'Option 2', 'Option 3']) !!}
+                      </div>
+                      <div class="form-group">
+                        {!! Form::label('Program Studi')!!}
+                        {!! Form::Select('prodi', ['Option 1', 'Option 2', 'Option 3']) !!}
+                      </div>
+       <!--                 <h6>Jalur Tes</h6>
                         <select class="browser-default" name="jalur">
                           <option value="" disabled selected>Choose your option</option>
                           <option value="1">Option 1</option>
@@ -130,7 +98,7 @@
                             <option value="0">{{$post->nama_prodi}}</option>
                           @endforeach
                         </select>
-                        <br>
+                      -->
                         <div class="row">
                           <div class="input-field col s6 offset-s6">
                             <button class="btn teal waves-effect waves-light" type="submit" href="#test2">Submit
