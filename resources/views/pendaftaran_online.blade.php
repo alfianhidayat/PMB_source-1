@@ -74,10 +74,10 @@
                     </div>
                     <div class="col s6">
                       <br>
-                      {!! Form::open(array('url' => 'cobawelcome')) !!}
+                      {!! Form::open(array('action' => 'PMBController@coba', 'method'=>'GET')) !!}
                       <div class="form-group">
                         {!! Form::label('Jalur Tes')!!}
-                        {!! Form::Select('jalur', ['Option 1', 'Option 2', 'Option 3']) !!}
+                        {!! Form::Select('jalur', ['Option 1','Option 2','Option 3'] ) !!}
                       </div>
                       <div class="form-group">
                         {!! Form::label('Program Studi')!!}
@@ -101,9 +101,11 @@
                       -->
                         <div class="row">
                           <div class="input-field col s6 offset-s6">
-                            <button class="btn teal waves-effect waves-light" type="submit" href="#test2">Submit
+                      <!--      <button class="btn teal waves-effect waves-light" type="submit" href="#test2">Submit
                               <i class="mdi-content-send right"></i>
                             </button>
+                          -->
+                            {!! Form::submit('Submit', array('class'=>'btn')) !!}
                         </div>
                       </div>
                       {!! Form::close() !!}
