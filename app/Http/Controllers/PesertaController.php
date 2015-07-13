@@ -1,11 +1,12 @@
 <?php namespace App\Http\Controllers;
 
+use App\peserta;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class PMBController extends Controller {
+class PesertaController extends Controller {
 
 	/**
 	 * Display a listing of the resource.
@@ -14,7 +15,8 @@ class PMBController extends Controller {
 	 */
 	public function index()
 	{
-		return view('index');
+		$peserta=peserta::all();
+		return view('peserta.index',compact('peserta'));
 	}
 
 	/**
@@ -25,6 +27,7 @@ class PMBController extends Controller {
 	public function create()
 	{
 		//
+		return view ('pendaftaran');
 	}
 
 	/**
@@ -32,9 +35,12 @@ class PMBController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
 		//
+		$peserta=$request->all();
+		peserta::create($peserta);
+		return redirect('peserta');
 	}
 
 	/**
@@ -46,6 +52,8 @@ class PMBController extends Controller {
 	public function show($id)
 	{
 		//
+		$peserta = peserta::find($id);
+		return view('peserta.show',compact('peserta'));
 	}
 
 	/**
@@ -79,46 +87,6 @@ class PMBController extends Controller {
 	public function destroy($id)
 	{
 		//
-	}
-
-	public function viewInformasi(){
-		$array = array();
-		$array ['posts'] = \App\Models\wkt::all();
-		return view('informasi',$array);
-	}
-
-	public function viewBeritaHasil(){
-		return view('berita_hasil');
-	}
-
-	public function viewBeritaUjian(){
-		return view('berita_ujian');
-	}
-
-	public function viewFormulir(){
-		return view('formulir_pendaftaran');
-	}
-
-	public function viewKonfirmasi(){
-		return view('konfirmasi_pembayaran');
-	}
-
-	public function viewPendafOnline(){
-		$array = array();
-		$array ['posts'] = \App\Models\prodi::all();
-		return view('pendaftaran',$array);
-	}
-
-	public function viewBeritaPenting(){
-		return view('berita_penting');
-	}
-
-	public function viewProdi(){
-		return view('prodi');
-	}
-
-	public function coba(){
-		return view('welcometest');
 	}
 
 }

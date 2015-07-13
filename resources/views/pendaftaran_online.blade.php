@@ -65,6 +65,7 @@
                       <li class="tab col s3"><a href="#test3">Data Keluarga</a></li>
                     </ul>
                   </div>
+                  {!! Form::open(array('url' => 'pendaftaran', 'method'=>'GET')) !!}
                   <div id="jalur_prodi" class="col s12">
                     <div class="section">
                     <div class="col s5">
@@ -74,7 +75,6 @@
                     </div>
                     <div class="col s6">
                       <br>
-                      {!! Form::open(array('action' => 'PMBController@coba', 'method'=>'GET')) !!}
                       <div class="form-group">
                         {!! Form::label('Jalur Tes')!!}
                         {!! Form::Select('jalur', ['Option 1','Option 2','Option 3'] ) !!}
@@ -105,10 +105,9 @@
                               <i class="mdi-content-send right"></i>
                             </button>
                           -->
-                            {!! Form::submit('Submit', array('class'=>'btn')) !!}
+                            {!! Form::submit('Next', array('class'=>'btn')) !!}
                         </div>
                       </div>
-                      {!! Form::close() !!}
                     </div>
                     </div>
                   </div>
@@ -130,6 +129,7 @@
                     </div>
                     </div>
                   </div>
+                  {!! Form::close() !!}
                 </li>
             </ul>
           </div>

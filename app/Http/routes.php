@@ -20,38 +20,6 @@ Route::controllers([
 	'password' => 'Auth\PasswordController',
 ]);
 
-// Begin Latihan
-
-Route::get('/', function(){
-	return 'hello laravel';
-});
-
-Route::get('helloworld',function(){
-	return 'hello world from laravel framework';
-});
-
-Route::get('motor',function(){
-	return 'dashbord motor';
-});
-
-Route::get('motor/{jenis}', function($jenis){
-	return 'motor dengan jenis : '.$jenis;
-});
-
-Route::get('motor/{jenis?}',function($jenis=Sport){
-	// if ($jenis==null) {
-	// 	return "Motor Dashboard Page";
-	// }
-	return "motor dengan jenis :".$jenis; 
-});
-
-Route::get('book','BookController@index');
-
-Route::get('book/{judul}','BookController@viewJudul');
-
-// End Latihan
-
-
 // Begin PMB
 
 Route::get('home','PMBController@index');
@@ -65,3 +33,6 @@ Route::get('informasipenting','PMBController@viewBeritaPenting');
 Route::get('prodi','PMBController@viewProdi');
 Route::get('db','RegController@index');
 Route::get('cobawelcome','PMBController@coba');
+
+Route::resource('peserta','PesertaController');
+
